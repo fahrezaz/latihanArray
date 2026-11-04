@@ -6,11 +6,8 @@ Kelas   : 1A
 
 import numpy as np
 
-nilai_ujian = np.array([
-    75, 88, 62, 95, 80, 55, 90, 83, 70, 68,
-    92, 78, 85, 60, 98, 73, 89, 66, 91, 77,
-    84, 58, 96, 71, 86, 79, 64, 100, 82, 69
-])
+np.random.seed(42)
+nilai_ujian = np.random.randint(50, 101, size=30)
 
 nilai_terurut = np.sort(nilai_ujian)[::-1]
 
